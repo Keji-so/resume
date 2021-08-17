@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #393E46;
+
+}
+
+.top {
+    position: relative;
+    height: 25vh;
+}
+
+.top::before {
+    content: "";
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    left: 100px;
+    background: #889E81;
+}
+
+.head {
+    height: 7vh;
+    width: 100%;
+    background: #BAC7A7;
+}
+
+.introduction {
+    display: flex;
+    color: #778a71;
+    padding: 10px 70px;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+}
+
+.name {
+    letter-spacing: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lastname {
+    font-size: 50px;
+}
+
+.firstname {
+    font-size: 55px;
+}
+
+.occupation {
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.contact-info {
+    margin: 15px 100px;
+    position: relative;
+    height: 20vh;
+    border-left: #889E81 2px solid;
+    color: #2B2B2B;
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    color: #889E81;
+    padding: 0 30px;
+}
+
+.address {
+    height: 10vh;
+    padding: 0 30px;
+    border-left: #889E81 2px solid;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.heading {
+    color: #393E46;
+    letter-spacing: 8px;
+    font-size: 28px;
+    padding: 10px 70px;
+    
+}
+
+.summary {
+    padding: 0 50px;
+    border-left: #889E81 2px solid;
+    display: flex;
+    align-items: center;
+    margin: 15px 100px;
+
+}
+
+.desc {
+    display: block; 
+}
+
+.main {
+    display: flex;
+}
+
+.skills {
+    width: 40%;
+}
+
+.experience {
+    width: 60%;
+}
+
+
+.skill {
+    color: #393E46;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 0 30px;
+  }
+
+  ul.new-list {
+      margin: 0 100px;
+      margin-bottom: 30px;
+  }
+  
+  li {
+    margin: 10px;
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+
+  a {
+      cursor: pointer;
+      color: #889E81;
+      font-weight: bold;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+
+  .proj {
+      display: block;
+  }
+
+  .task-container {
+    margin: 10%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-container {
+   font-size: 38px;
+   color: #1b1b1b;
+    max-width: 70%;
+   width: 100%;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.names {
+   font-size: 45px;
+   color: #889E81;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    max-width: 40%;
+    width: 100%;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width: 450px) {
+
+    .top {
+        position: relative;
+        height: 15vh;
+    }
+
+    .top::before {
+        left: 50px;
+    }
+
+    .introduction {
+          padding: 10px 20px;
+          flex-direction: column;
+    }
+
+    .occupation {
+        font-size: 15px;
+        align-self: flex-start;
+        margin: 10px 0;
+    }
+
+    .name {
+        letter-spacing: 10px;
+    }
+
+    .lastname {
+        font-size: 20px;
+    }
+    
+    .firstname {
+        font-size: 25px;
+    }
+
+    .contact-info {
+        margin: 10px 30px;
+        padding: 0 10px;
+        font-size: 13px;
+        height: 15vh;
+    }
+
+    .logo {
+        padding: 0 10px;
+    }
+
+    .address {
+    height: 10vh;
+    padding: 0 10px;
+    }
+
+    .heading {
+        letter-spacing: 4px;
+        font-size: 20px;
+        padding: 10px 30px;
+        
+    }
+
+    .summary {
+        padding: 0 20px;
+        margin: 15px 40px;
+    
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 100%;
+    }
+    
+    .experience {
+        width: 100%;
+    }
+
+    .skill {
+        font-size: 16px;
+    }
+
+    ul.new-list {
+        margin: 0 50px;
+        margin-bottom: 30px;
+    }
+
+    .name-container {
+        font-size: 20px;
+     }
+     
+     .names {
+        font-size: 25px;
+
+     }
+
+     img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .images {
+        margin-top: 5%;
+        max-width: 60%;
+        width: 100%;
+    }
+    
+  }
+
+  @media (min-width: 450px) and (max-width: 900px) {
+    .name {
+        letter-spacing: 12px;
+    }
+    
+    .lastname {
+        font-size: 35px;
+    }
+    
+    .firstname {
+        font-size: 40px;
+    }
+
+    .occupation {
+        font-size: 16px;
+        align-self: flex-end;
+    }
+
+    .heading {
+        font-size: 25px;
+        
+    }
+
+    .skill {
+        font-size: 16px;
+    }
+  }
