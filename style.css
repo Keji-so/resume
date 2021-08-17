@@ -199,6 +199,7 @@ ul {
 img {
     width: 60px;
     height: 60px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 450px) {
