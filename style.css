@@ -72,6 +72,12 @@ body {
     align-items: center;
 }
 
+.email, .phone {
+    display: flex;
+}
+
+
+
 .location {
     display: flex;
     align-items: center;
@@ -81,6 +87,10 @@ body {
 .logo {
     color: #889E81;
     padding: 0 30px;
+}
+
+.call, .mail {
+    padding-left: 0;
 }
 
 .address {
